@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Website | Home</title>
+    <style>
+        /* General Body and Font */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0a0f1e;
+            color: #ffffff;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(45deg, #FF5733, #FFC300, #DAF7A6);
+            padding: 20px 0;
+            text-align: center;
+            color: white;
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        nav a {
+            color: #ffffff;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin: 0 10px;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        nav a:hover {
+            color: #FFC300;
+            transform: scale(1.1);
+            text-shadow: 0px 0px 10px #FFC300;
+        }
+
+        /* Main Content and Sections */
+        main {
+            padding: 20px;
+        }
+
+        section {
+            width: 50%;
+            margin-top: 5rem;
+            margin-left: 23rem;
+            margin-bottom: 40px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            background: linear-gradient(120deg, #FFC300, #929b29);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            font-size: 3rem;
+            color: #000;
+            text-shadow: 1px 1px 3px #000;
+        }
+        .img img{
+            width: 30rem;
+            height: 30rem;
+        }
+        .img-3 img{
+            width: 30rem;
+            height: 30rem;
+        }
+        .img-4 img{
+            width: 30rem;
+            height: 30rem;
+        }
+
+        .image-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        section:hover{
+            transform: scale(1.02);
+        }
+
+        .image-grid img {
+            width: 30%;
+            height: 15rem;
+            border-radius: 12px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease;
+        }
+
+        .image-grid img:hover {
+            transform: scale(1.05);
+        }
+
+        
+  .btn {
+    margin-left: 40rem;
+    margin-bottom: 4rem;
+  padding: 15px 40px;
+  border: none;
+  outline: none;
+  color: #FFF;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 12px;
+}
+.btn::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+/* glow */
+.btn::before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #FF0000, #FF7300, #FFFB00, #48FF00,
+    #00FFD5, #002BFF, #FF00C8, #FF0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height:  calc(100% + 4px);
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+  opacity: 0;
+}
+
+@keyframes glowing {
+  0% {background-position: 0 0;}
+  50% {background-position: 400% 0;}
+  100% {background-position: 0 0;}
+}
+
+/* hover */
+.btn:hover::before {
+  opacity: 1;
+}
+
+.btn:active:after {
+  background: transparent;
+}
+
+.btn:active {
+  color: #000;
+  font-weight: bold;
+}
+
+        /* Image Styling */
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    footer {
+            background: linear-gradient(45deg, #FF5733, #FFC300, #DAF7A6);
+            padding: 20px 0;
+            text-align: center;
+            color: white;
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px #000000;
+        }
+ .icons a{
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+    
+ }
+ .icons .facebook:hover{
+    color: #002BFF;
+    transform: scale(1.35);
+ }
+ .icons .whatsapp:hover{
+    color: #00ff2a;
+    transform: scale(1.35);
+ }
+ .icons .tiktok:hover{
+    color: #181819;
+    transform: scale(1.35);
+ }
+ .icons .instagram:hover{
+    color: #d000ff;
+    transform: scale(1.35);
+ }
+  
+  
+  
+  
+  </style>
+</head>
+<body>
+    <header>
+        My Life
+    </header>
+    
+    <nav>
+        <a href="#myself">Home</a>
+        <a href="#school">School</a>
+        <a href="#college">College</a>
+        <a href="#university">University</a>
+    </nav>
+    
+    <main>
+        <section id="myself">
+            <h2>Myself</h2>
+            <div class="image-grid">
+                <img src="image/image.klj.jpg" alt="Childhood Image 1">
+                <img src="image/image.2.jpg" alt="Childhood Image 2">
+            </div>
+            <p>These are my cherished childhood moments, dating back to the early years.</p>
+            <p><strong>D.O.B:</strong> 21/10/2003</p>
+        </section>
+        
+        <section id="school">
+            <h2>School</h2>
+            <div class="img">
+            <img src="image/image.3.jpg" alt="School Memories">
+            <p>This snapshot from my school years brings back a flood of memories. It was a time of learning and growth.</p>
+            <p><strong>School Years:</strong> 2007 - 2021</p>
+        </div>
+        </section>
+        
+        <section id="college">
+            <h2>College</h2><div class="img-3">
+            <img src="image/image.4.jpg" alt="College Life">
+            <p>College life brought with it a new set of experiences, friendships, and adventures.</p>
+            <p><strong>College Years:</strong> 2021 - 2023</p>
+        </div>
+        </section>
+        
+        <section id="university">
+            <h2>University</h2>
+            <div class="img-4">
+            <img src="image/image.a.jpg" alt="University Days">
+            <p>University has been a transformative journey, preparing me for the future.</p>
+            <p><strong>University Years:</strong> 2023 - 2027</p>
+        </div>
+        </section>
+   
+    </main>
+    
+    <button class="btn">Thank You for Visiting</button>
+    <footer>
+        Abdullah Rashid © 2024 | All Rights Reserved
+        <div class="icons">
+            <a href="www.facebook.com"><i class='bx bxl-facebook facebook'></i></a>
+            <a href="www.whatsapp.com"><i class='bx bxl-whatsapp whatsapp' ></i></a>
+            <a href="www.tiktok.com"><i class='bx bxl-tiktok tiktok' ></i></a>
+            <a href="www.instgram.com"><i class='bx bxl-instagram instagram' ></i></a>
+        </div>
+    </footer>
+</body>
+</html>
